@@ -6,57 +6,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">Prathamesh 's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home      </a></li>
-                    <li><a href="/">About     </a></li>
-                    <li><a href="/">Services  </a></li>
-                    <li><a href="/">Projects  </a></li>
-                    <li><a href="/">Contact Me</a></li>
-                   
-
-
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hi, My name is <span class="blue">Prathamesh</span> 
-                <div>and I am a passionate</div>
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">
+               <img src="/images/logo1.png" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="#hero" class="menu_link active-link" >Home</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#about" class="menu_link">About</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#resume" class="menu_link">Resume</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#portfolio" class="menu_link">Portfolio</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#services" class="menu_link">Services</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#contact" class="menu_link">Contact</a>
+                </li>
+                <ion-icon name="close-outline" class="close_icon"></ion-icon> 
                 
-                <span id="element"></span>
+            </ul>
+            <ion-icon name="menu-outline" class="toggle_icon"></ion-icon>
+        </div>
+    </header>
 
-
+    <main>
+        <section class="hero section" id="hero">
+            <div class="hero_container container grid">
+                <div class="hero_content">
+                    <h4>Hi there,</h4>
+                    <h1>I'm
+                        <span id="element"></span>
+                        <span class="typed" data-typed-items="Designer , Front End Developer , Skilled Stock Investor"></span>
+                    </h1>
+                    <p>
+                        I'm a Creative Web Developer and I'm very passionate and dedicated about my work.
+                    </p>
+                    <div class="hero_social">
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                    <a href="#contact" class="btn">
+                        Read More
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </a>
+                </div>
+                <div class="hero_img">
+                    <img src="/images/pic1" alt="" class="img-fluid">
+                </div>
             </div>
-            <div class="rightsection">
-                <img src="/CODSOFT/potfolio/images/pic1" alt="">
-            </div>
-
         </section>
-        <hr>
-        <section class="secondsection">
-            <h1>Past Experience</h1>
+        <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
+            <div class="about_container container grid">
+                <div class="about_img">
+                    <img src="/images/pic3.png" alt="">
+                </div>
+                <div class="about_content">
+                    <h1>I make Professional Bots on Discord</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a natus itaque neque mollitia beatae laudantium ab nostrum possimus sequi animi optio sapiente odit, ipsa est et laboriosam, sint impedit!</p>
+                    <div class="about_info">
+                        <div>
+                            <span class="number">40</span>
+                            <br>
+                            <span class="text">Completed <br>Project</span>
+                        </div>
+                        <div>
+                            <span class="number">50%</span>
+                        <br>
+                        <span class="text">Positive <br>Reviews</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        <section class="resume section" id="resume">
+            <h2 class="section_title">Resume</h2>
+            <div class="resume_container container grid">
+                <div class="resume_tabs">
+                    <ul>
+                        <li>
+                            <a href="#page-1" class="current">Education</a>
+                        </li>
+                        <li>
+                            <a href="#page-2" >Experience</a>
+                        </li>
+                        <li>
+                            <a href="#page-3" >Skills</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="resume_content">
+                    <div id="page-1" class="page one">
+                        <div class="page_heading">Education</div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                                <span class="date">2019-2021</span>
+                                <h4>Higher Secondary Education</h4>
+                                <span class="position"> Novel Jr College</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam magnam optio, suscipit dicta ipsam. Explicabo suscipit, perferendis harum architecto voluptas expedita libero assumenda voluptatibus eveniet. Iusto vel atque ducimus!
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                                <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                                <span class="date">2021-2024</span>
+                                <h4>Bachelor in Computer Science</h4>
+                                <span class="position"> Pk Technical Campus</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam magnam optio, suscipit dicta ipsam. Explicabo suscipit, perferendis harum architecto voluptas expedita libero assumenda voluptatibus eveniet. Iusto vel atque ducimus!
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
+
+
+
+
+
+
+
+
+
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-          strings: ['Web Developer.', 'Bot Programmer.', 'Digital Marketing Expert.'],
-          typeSpeed: 50,
-        });
-      </script>
+
+  
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Designer ',' Front End Developer ', 'Skilled Stock Investor'],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000,
+    });
+  </script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script> 
+    <script src="/app.js"></script>
 </body>
 
 </html>
